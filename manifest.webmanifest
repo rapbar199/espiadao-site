@@ -1,0 +1,16 @@
+{
+  "name": "Espiadão",
+  "short_name": "Espiadão",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14112A",
+  "theme_color": "#14112A",
+  "icons": [
+    {
+      "src": "/icone.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

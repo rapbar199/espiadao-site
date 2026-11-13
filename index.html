@@ -3,17 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Espiadão — o app de quem acompanha reality</title>
-<meta name="description" content="Monte seu bonequinho, jogue todo dia, dê seus palpites de paredão e dispute com os amigos. O app de segunda tela de quem acompanha reality.">
+<title>Espiadão: app de reality com palpite de paredão, jogos e ao vivo</title>
+<meta name="description" content="Monte seu bonequinho, responda a pergunta do dia, crave quem sai no paredão e comente ao vivo com a galera. App de fãs de reality, grátis pra iPhone e Android.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://espiadao.com.br/">
-<meta property="og:title" content="Espiadão — o app de quem acompanha reality">
-<meta property="og:description" content="Monte seu bonequinho, jogue todo dia, dê seus palpites de paredão e dispute com os amigos. O app de segunda tela de quem acompanha reality.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Espiadão">
+<meta property="og:title" content="Espiadão: app de reality com palpite de paredão, jogos e ao vivo">
+<meta property="og:description" content="Monte seu bonequinho, responda a pergunta do dia, crave quem sai no paredão e comente ao vivo com a galera. App de fãs de reality, grátis pra iPhone e Android.">
 <meta property="og:url" content="https://espiadao.com.br/">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://espiadao.com.br/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Três bonequinhos do Espiadão espiando por cima de um muro amarelo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Espiadão: app de reality com palpite de paredão, jogos e ao vivo">
+<meta name="twitter:description" content="Monte seu bonequinho, responda a pergunta do dia, crave quem sai no paredão e comente ao vivo com a galera. App de fãs de reality, grátis pra iPhone e Android.">
+<meta name="twitter:image" content="https://espiadao.com.br/og.jpg">
 <meta name="theme-color" content="#14112A">
-<link rel="icon" href="/icone.png">
+<meta name="application-name" content="Espiadão">
+<meta name="apple-mobile-web-app-title" content="Espiadão">
+<link rel="icon" href="/icone.png" type="image/png">
 <link rel="apple-touch-icon" href="/icone.png">
-<meta property="og:image" content="https://espiadao.com.br/icone.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://espiadao.com.br/#rb","name":"RB Tecnologia","url":"https://espiadao.com.br","email":"barbosa199@gmail.com"},{"@type":"WebSite","@id":"https://espiadao.com.br/#site","name":"Espiadão","url":"https://espiadao.com.br","inLanguage":"pt-BR","publisher":{"@id":"https://espiadao.com.br/#rb"}},{"@type":"MobileApplication","name":"Espiadão","operatingSystem":"iOS, Android","applicationCategory":"GameApplication","inLanguage":"pt-BR","image":"https://espiadao.com.br/icone.png","description":"App de fãs de reality show: bonequinho, pergunta do dia, palpite de paredão, liga dos amigos e ao vivo.","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"publisher":{"@id":"https://espiadao.com.br/#rb"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O Espiadão é oficial?","acceptedAnswer":{"@type":"Answer","text":"Não. App de fãs, feito pela RB Tecnologia. Não é oficial e não tem relação com emissoras, produtoras ou com os programas comentados."}},{"@type":"Question","name":"É grátis?","acceptedAnswer":{"@type":"Answer","text":"Sim. Baixar e jogar é grátis, no iPhone e no Android."}},{"@type":"Question","name":"Palpite vale dinheiro?","acceptedAnswer":{"@type":"Answer","text":"Não. Pontos, níveis e itens do bonequinho não valem dinheiro e não podem ser trocados por nada. É pela resenha e pelo direito de zoar os amigos."}},{"@type":"Question","name":"Quando chega?","acceptedAnswer":{"@type":"Answer","text":"Nas lojas antes da estreia da temporada. A Pergunta do dia e o Adivinhe quem é começam no lançamento; o resto abre junto com o programa (veja o calendário)."}},{"@type":"Question","name":"Quem pode usar?","acceptedAnswer":{"@type":"Answer","text":"Quem tem 13 anos ou mais. Só maiores de 18 publicam no feed; os mais novos jogam, dão palpite, curtem e reagem."}},{"@type":"Question","name":"Como ganho itens pro bonequinho?","acceptedAnswer":{"@type":"Answer","text":"Jogando a Pergunta do dia: cada dia jogado libera um item, e as sequências longas dão troféus como a coroa. O que diz quem você é (pele, cabelo, cadeira de rodas, aparelho auditivo, religião) é livre desde o primeiro dia."}},{"@type":"Question","name":"Vou receber notificação?","acceptedAnswer":{"@type":"Answer","text":"Só se você ligar. Avisamos quando o paredão abre, 1 hora antes de fechar e quando sai o resultado, e lembramos da Pergunta do dia pra sua sequência não zerar."}}]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
@@ -128,6 +143,23 @@ border:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;justif
 .final p{color:var(--suave);margin:0 auto 24px;max-width:40ch}
 .selo{display:inline-block;background:var(--holofote);color:var(--holofote-texto);font-weight:800;border-radius:999px;padding:12px 24px;font-size:17px;box-shadow:0 5px 0 #C99A12}
 .nota{color:var(--suave);font-size:14px}
+.emojis{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.emojis span{background:rgba(255,255,255,.08);border-radius:999px;padding:3px 10px;font-size:15px}
+.emojis b{font-size:12px;color:var(--suave)}
+a.loja{text-decoration:none;opacity:1}
+a.loja:hover{border-color:#888}
+.linha-tempo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:f}
+@media (max-width:900px){.linha-tempo{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.linha-tempo{grid-template-columns:1fr}}
+.linha-tempo li{background:var(--cartao);border:1px solid var(--linha);border-radius:24px;padding:20px;border-top:4px solid var(--holofote)}
+.linha-tempo b{font:800 20px/1.2 "Baloo 2",sans-serif;color:var(--holofote)}
+.linha-tempo p{margin:6px 0 0;color:var(--suave);font-size:16px}
+.duvida{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:0 18px;margin-bottom:10px}
+.duvida summary{cursor:pointer;font:800 19px/1.3 "Baloo 2",sans-serif;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.duvida summary::-webkit-details-marker{display:none}
+.duvida summary::after{content:"+";color:var(--holofote);font-size:24px;line-height:1}
+.duvida[open] summary::after{content:"−"}
+.duvida p{margin:0 0 16px;color:var(--suave)}
 /* textos legais */
 .doc{padding:48px 0 24px}
 .doc h1{font-size:clamp(34px,5vw,46px);line-height:1.05;margin:0 0 6px}
@@ -148,12 +180,12 @@ footer p{margin:0;max-width:52ch;font-size:13px}
 <body>
 <header class="barra"><div class="miolo">
 <a class="marca" href="/"><img src="/icone.png" alt="" width="36" height="36"><span>Espiad<b>ã</b>o</span></a>
-<nav><a href="/#jogos">O app</a><a href="/#como">Como funciona</a><a href="/privacidade/">Privacidade</a></nav>
+<nav><a href="/#jogos">O app</a><a href="/#calendario">Calendário</a><a href="/#perguntas">Dúvidas</a><a href="/privacidade/">Privacidade</a></nav>
 </div></header>
 <main>
 <section class="hero" style="padding-bottom:0">
   <div class="miolo">
-    <span class="etiqueta"><i></i>Chega em janeiro, junto com a temporada</span>
+    <span class="etiqueta"><i></i>Chega antes da temporada · grátis</span>
     <h1>O app de quem <em>acompanha reality</em></h1>
     <p class="sub">Jogue todo dia, crave o paredão e comente ao vivo com a sua turma. Tudo com o seu bonequinho.</p>
   </div>
@@ -169,8 +201,8 @@ footer p{margin:0;max-width:52ch;font-size:13px}
     <button class="chip dado" data-sortear>Sortear outro visual</button>
   </div>
   <div class="lojas">
-    <div class="loja"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2.1-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.8-1-2.8-4.1zM13.9 4.9c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span><small>Em breve na</small><b>App Store</b></span></div>
-    <div class="loja"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.2c-.3.3-.4.7-.4 1.3v17c0 .6.1 1 .4 1.3l9.5-9.8-9.5-9.8zm10.6 10.9 2.8 2.9-10.8 6.2 8-9.1zm3.9-3.2 3 1.7c.9.5.9 1.3 0 1.8l-3 1.7-3.1-3.1 3.1-2.1zM6.2 1.8 17 8 14.2 10.9l-8-9.1z"/></svg><span><small>Em breve no</small><b>Google Play</b></span></div>
+    <div class="loja" data-loja="apple"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2.1-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.8-1-2.8-4.1zM13.9 4.9c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span><small>Em breve na</small><b>App Store</b></span></div>
+    <div class="loja" data-loja="google"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.2c-.3.3-.4.7-.4 1.3v17c0 .6.1 1 .4 1.3l9.5-9.8-9.5-9.8zm10.6 10.9 2.8 2.9-10.8 6.2 8-9.1zm3.9-3.2 3 1.7c.9.5.9 1.3 0 1.8l-3 1.7-3.1-3.1 3.1-2.1zM6.2 1.8 17 8 14.2 10.9l-8-9.1z"/></svg><span><small>Em breve no</small><b>Google Play</b></span></div>
   </div>
 </section>
 
@@ -179,7 +211,7 @@ footer p{margin:0;max-width:52ch;font-size:13px}
     <div class="titulo"><span class="sobretitulo">O que tem no app</span><h2>Um motivo pra abrir todo dia</h2><p>Jogos rápidos, palpites da semana e a resenha ao vivo, no mesmo lugar.</p></div>
     <div class="grade">
       <div class="cartao" style="--c:var(--roxo)"><div class="tela" aria-hidden="true"><div class="fila"><img class="cara " data-carinha="lia" alt=""><img class="cara g" data-carinha="teo" data-expressao="rindo" alt=""><img class="cara " data-carinha="bia" alt=""></div>
-    <div class="amostras"><i style="background:#7F5AF0"></i><i style="background:#E06C9F"></i><i style="background:#4D8DE0"></i><i style="background:#1D9E75"></i><i style="background:#F4C430"></i></div></div><h3>Seu bonequinho</h3><p>Monte o seu, do cabelo à torcida. Ele aparece no feed, nos rankings e comemora com você.</p></div>
+    <div class="amostras"><i style="background:#7F5AF0"></i><i style="background:#E06C9F"></i><i style="background:#4D8DE0"></i><i style="background:#1D9E75"></i><i style="background:#F4C430"></i></div></div><h3>Seu bonequinho</h3><p>Monte o seu, do cabelo à torcida, e ganhe roupas, acessórios e dancinhas jogando todo dia. Ele aparece no feed e nos rankings.</p></div>
       <div class="cartao" style="--c:var(--holofote)"><div class="tela" aria-hidden="true"><div class="pergunta"><b>PERGUNTA DO DIA #12</b>
     <div class="op"><span>A</span><i class="linha" style="max-width:60%"></i></div>
     <div class="op certa"><span>B</span><i class="linha" style="max-width:75%"></i>✓</div>
@@ -198,6 +230,12 @@ footer p{margin:0;max-width:52ch;font-size:13px}
     <div class="post"><img class="cara p" data-carinha="ju" data-expressao="chocado" alt=""><div><b>@ju</b> <small>· agora</small></div>
     <p>Esse paredão vai ser histórico, não tô preparada</p>
     <div class="reacoes"><span>😱 1,2 mil</span><span>😂 860</span><span>🔥 2,4 mil</span></div></div></div><h3>Ao vivo</h3><p>Feed pra comentar o programa e reações em tempo real com todo mundo que está assistindo.</p></div>
+      <div class="cartao" style="--c:var(--holofote)"><div class="tela" aria-hidden="true"><div class="fila"><img class="cara " data-carinha="top2" data-expressao="feliz" alt=""><img class="cara g" data-carinha="top1" data-expressao="rindo" alt=""><img class="cara " data-carinha="top3" data-expressao="piscando" alt=""></div>
+    <span class="chama">👑 até 60 pontos</span></div><h3>Palpite da temporada</h3><p>Crave o campeão e o top 3 logo na primeira semana. Acertou tudo? São até 60 pontos no ranking.</p></div>
+      <div class="cartao" style="--c:var(--verde)"><div class="tela" aria-hidden="true"><div class="emojis"><span>🐍 <b>128</b></span><span>❤️ <b>302</b></span><span>🌱 <b>64</b></span><span>💣 <b>41</b></span></div>
+    <span class="placar">zera à meia-noite</span></div><h3>Quem está em alta</h3><p>Todo dia você dá um emoji pra cada participante: cobra, planta, coração... e vê o clima da casa.</p></div>
+      <div class="cartao" style="--c:var(--azul)"><div class="tela" aria-hidden="true"><div class="fila"><img class="cara " data-carinha="jeito1" alt=""><img class="cara g" data-carinha="jeito2" data-expressao="feliz" alt=""><img class="cara " data-carinha="jeito3" alt=""></div>
+    <div class="emojis"><span>♿</span><span>🦻</span><span>🌻</span><span>♾️</span><span>🧕</span></div></div><h3>Do jeito que você é</h3><p>Cadeira de rodas, vitiligo, aparelho auditivo, cordão de girassol, hijab e mais. Livres desde o primeiro dia.</p></div>
     </div>
   </div>
 </section>
@@ -219,6 +257,31 @@ footer p{margin:0;max-width:52ch;font-size:13px}
   </div>
 </section>
 
+<section id="calendario" style="padding-top:0">
+  <div class="miolo">
+    <div class="titulo"><span class="sobretitulo">Calendário</span><h2>O app abre junto com a casa</h2><p>Os jogos do dia começam no lançamento. O resto vai abrindo no ritmo do programa.</p></div>
+    <ol class="linha-tempo">
+      <li><b>No lançamento</b><p>Bonequinho, Pergunta do dia, Adivinhe quem é e liga dos amigos. Já dá pra montar a turma.</p></li>
+      <li><b>Saiu o elenco</b><p>Abrem a Casa, com a ficha de cada participante, e o palpite do campeão da temporada.</p></li>
+      <li><b>08/01 · Casas de vidro</b><p>Abre o Ao vivo: feed e reações em tempo real com quem está assistindo.</p></li>
+      <li><b>11/01 · Estreia</b><p>Começam os palpites de paredão, liderança e anjo, e o termômetro de quem está em alta.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="perguntas" style="padding-top:0">
+  <div class="miolo estreito">
+    <div class="titulo"><span class="sobretitulo">Dúvidas</span><h2>Perguntas frequentes</h2></div>
+    <details class="duvida"><summary>O Espiadão é oficial?</summary><p>Não. App de fãs, feito pela RB Tecnologia. Não é oficial e não tem relação com emissoras, produtoras ou com os programas comentados.</p></details>
+    <details class="duvida"><summary>É grátis?</summary><p>Sim. Baixar e jogar é grátis, no iPhone e no Android.</p></details>
+    <details class="duvida"><summary>Palpite vale dinheiro?</summary><p>Não. Pontos, níveis e itens do bonequinho não valem dinheiro e não podem ser trocados por nada. É pela resenha e pelo direito de zoar os amigos.</p></details>
+    <details class="duvida"><summary>Quando chega?</summary><p>Nas lojas antes da estreia da temporada. A Pergunta do dia e o Adivinhe quem é começam no lançamento; o resto abre junto com o programa (veja o calendário).</p></details>
+    <details class="duvida"><summary>Quem pode usar?</summary><p>Quem tem 13 anos ou mais. Só maiores de 18 publicam no feed; os mais novos jogam, dão palpite, curtem e reagem.</p></details>
+    <details class="duvida"><summary>Como ganho itens pro bonequinho?</summary><p>Jogando a Pergunta do dia: cada dia jogado libera um item, e as sequências longas dão troféus como a coroa. O que diz quem você é (pele, cabelo, cadeira de rodas, aparelho auditivo, religião) é livre desde o primeiro dia.</p></details>
+    <details class="duvida"><summary>Vou receber notificação?</summary><p>Só se você ligar. Avisamos quando o paredão abre, 1 hora antes de fechar e quando sai o resultado, e lembramos da Pergunta do dia pra sua sequência não zerar.</p></details>
+  </div>
+</section>
+
 <section class="final">
   <div class="miolo">
     <h2>Seu bonequinho já pode ir se arrumando</h2>
@@ -232,5 +295,16 @@ footer p{margin:0;max-width:52ch;font-size:13px}
 <p>© 2026 RB Tecnologia. App de fãs, sem relação com emissoras, produtoras ou com os programas comentados.</p>
 </div></footer>
 <script type="module" src="/palco.js"></script>
+<script>(function(){try{
+if(location.hostname!=='espiadao.com.br'||navigator.doNotTrack==='1'||navigator.globalPrivacyControl)return;
+var U="https://dlxwhlfsyhdbdiwzplwl.supabase.co",K="sb_publishable_HgMdNjFxocX7KACiNczuOw_5r9LrjiI",id;
+try{id=sessionStorage.getItem('espiadao_aba');if(!id){id='s'+Math.random().toString(36).slice(2,12)+Date.now().toString(36);sessionStorage.setItem('espiadao_aba',id)}}catch(e){id='s'+Math.random().toString(36).slice(2,14)}
+function manda(nome,props){fetch(U+'/rest/v1/rpc/registrar_metricas',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json',apikey:K,Authorization:'Bearer '+K},
+body:JSON.stringify({p_origem:'site',p_instalacao:id,p_plataforma:'web',p_versao:'site',p_eventos:[{nome:nome,props:props}]})}).catch(function(){})}
+var q=new URLSearchParams(location.search),ref='';try{var r=new URL(document.referrer);if(r.hostname!==location.hostname)ref=r.hostname.replace(/^www\./,'')}catch(e){}
+manda('site_visita',{pagina:location.pathname,ref:ref,utm_source:q.get('utm_source')||'',utm_medium:q.get('utm_medium')||'',utm_campaign:q.get('utm_campaign')||'',tela:matchMedia('(max-width:700px)').matches?'celular':'computador'});
+document.addEventListener('click',function(e){var l=e.target.closest&&e.target.closest('[data-loja]');if(l)manda('site_loja',{loja:l.getAttribute('data-loja')});
+var b=e.target.closest&&e.target.closest('[data-emote],[data-sortear]');if(b&&!window.__espBoneco){window.__espBoneco=1;manda('site_bonequinho',{})}});
+}catch(e){}})();</script>
 </body>
 </html>

@@ -5,15 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidade — Espiadão</title>
 <meta name="description" content="Como o Espiadão trata os seus dados.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://espiadao.com.br/privacidade/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Espiadão">
 <meta property="og:title" content="Política de Privacidade — Espiadão">
 <meta property="og:description" content="Como o Espiadão trata os seus dados.">
 <meta property="og:url" content="https://espiadao.com.br/privacidade/">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://espiadao.com.br/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Três bonequinhos do Espiadão espiando por cima de um muro amarelo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Política de Privacidade — Espiadão">
+<meta name="twitter:description" content="Como o Espiadão trata os seus dados.">
+<meta name="twitter:image" content="https://espiadao.com.br/og.jpg">
 <meta name="theme-color" content="#14112A">
-<link rel="icon" href="/icone.png">
+<meta name="application-name" content="Espiadão">
+<meta name="apple-mobile-web-app-title" content="Espiadão">
+<link rel="icon" href="/icone.png" type="image/png">
 <link rel="apple-touch-icon" href="/icone.png">
-<meta property="og:image" content="https://espiadao.com.br/icone.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
@@ -128,6 +142,23 @@ border:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;justif
 .final p{color:var(--suave);margin:0 auto 24px;max-width:40ch}
 .selo{display:inline-block;background:var(--holofote);color:var(--holofote-texto);font-weight:800;border-radius:999px;padding:12px 24px;font-size:17px;box-shadow:0 5px 0 #C99A12}
 .nota{color:var(--suave);font-size:14px}
+.emojis{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.emojis span{background:rgba(255,255,255,.08);border-radius:999px;padding:3px 10px;font-size:15px}
+.emojis b{font-size:12px;color:var(--suave)}
+a.loja{text-decoration:none;opacity:1}
+a.loja:hover{border-color:#888}
+.linha-tempo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:f}
+@media (max-width:900px){.linha-tempo{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.linha-tempo{grid-template-columns:1fr}}
+.linha-tempo li{background:var(--cartao);border:1px solid var(--linha);border-radius:24px;padding:20px;border-top:4px solid var(--holofote)}
+.linha-tempo b{font:800 20px/1.2 "Baloo 2",sans-serif;color:var(--holofote)}
+.linha-tempo p{margin:6px 0 0;color:var(--suave);font-size:16px}
+.duvida{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:0 18px;margin-bottom:10px}
+.duvida summary{cursor:pointer;font:800 19px/1.3 "Baloo 2",sans-serif;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.duvida summary::-webkit-details-marker{display:none}
+.duvida summary::after{content:"+";color:var(--holofote);font-size:24px;line-height:1}
+.duvida[open] summary::after{content:"−"}
+.duvida p{margin:0 0 16px;color:var(--suave)}
 /* textos legais */
 .doc{padding:48px 0 24px}
 .doc h1{font-size:clamp(34px,5vw,46px);line-height:1.05;margin:0 0 6px}
@@ -148,28 +179,30 @@ footer p{margin:0;max-width:52ch;font-size:13px}
 <body>
 <header class="barra"><div class="miolo">
 <a class="marca" href="/"><img src="/icone.png" alt="" width="36" height="36"><span>Espiad<b>ã</b>o</span></a>
-<nav><a href="/#jogos">O app</a><a href="/#como">Como funciona</a><a href="/privacidade/">Privacidade</a></nav>
+<nav><a href="/#jogos">O app</a><a href="/#calendario">Calendário</a><a href="/#perguntas">Dúvidas</a><a href="/privacidade/">Privacidade</a></nav>
 </div></header>
 <main class="miolo estreito doc">
 <span class="sobretitulo">Espiadão</span>
 <h1>Política de Privacidade</h1>
-<p class="nota">Versão de 13/11/2026.</p>
+<p class="nota">Versão de 14/11/2026.</p>
 <h2>Quem cuida dos seus dados</h2>
 <p>A RB Tecnologia é a controladora dos dados tratados pelo Espiadão, nos termos da Lei Geral de Proteção de Dados (LGPD).</p>
 <h2>O que coletamos</h2>
-<p>E-mail (ou a conta Apple/Google usada para entrar), seu @, data de nascimento, o bonequinho, respostas dos jogos, palpites, ligas, torcida, posts, curtidas, denúncias e bloqueios. Não pedimos nome real, telefone, localização, contatos nem fotos.</p>
+<p>E-mail (ou a conta Apple/Google usada para entrar), seu @, data de nascimento, o bonequinho, respostas dos jogos, palpites, ligas, torcida, posts, curtidas, denúncias e bloqueios. Se você ligar os avisos, guardamos o código de notificação do aparelho. Também registramos como o app é usado (por exemplo: abriu o app, respondeu a pergunta, salvou um palpite), com um código aleatório do aparelho, o sistema (iPhone ou Android) e a versão do app. Não pedimos nome real, telefone, localização, contatos nem fotos.</p>
 <h2>Para que usamos</h2>
-<p>Para manter sua conta e seu progresso, calcular pontos e rankings, mostrar o feed, aplicar as regras de idade (13+ para entrar, 18+ para publicar) e moderar o conteúdo. Não vendemos seus dados e não usamos para publicidade personalizada.</p>
+<p>Para manter sua conta e seu progresso, calcular pontos e rankings, mostrar o feed, aplicar as regras de idade (13+ para entrar, 18+ para publicar) e moderar o conteúdo, mandar os avisos que você ligou e entender o que funciona no app para melhorá-lo (números gerais, como quantas pessoas jogaram hoje). Não vendemos seus dados e não usamos para publicidade personalizada.</p>
 <h2>O que os outros veem</h2>
 <p>Seu @, seu bonequinho, a cor da torcida, seus posts e seus pontos nos rankings. Sua data de nascimento, seu e-mail e seus palpites individuais não aparecem para ninguém.</p>
 <h2>Onde ficam</h2>
-<p>Em servidores da Supabase na região de São Paulo. O e-mail com o código de acesso é enviado pela Resend. Esses fornecedores só tratam os dados para prestar o serviço ao Espiadão.</p>
+<p>Em servidores da Supabase na região de São Paulo. O e-mail com o código de acesso é enviado pela Resend e as notificações passam pelo serviço da Expo e pelos sistemas da Apple e do Google. Esses fornecedores só tratam os dados para prestar o serviço ao Espiadão.</p>
 <h2>Menores de idade</h2>
 <p>Contas de 13 a 17 anos não publicam no feed. Se você é responsável por um menor e quer apagar a conta dele, faça isso pelo próprio app ou fale com a gente.</p>
 <h2>Seus direitos</h2>
 <p>Você pode acessar, corrigir e apagar seus dados. Apagar a conta (Perfil → Apagar minha conta) remove tudo o que está no servidor; o que está só no aparelho some ao desinstalar o app.</p>
+<h2>Site</h2>
+<p>O site espiadao.com.br não usa cookies nem ferramentas de rastreamento de terceiros. Contamos visitas de forma anônima: a página visitada, de onde a visita veio (site ou campanha) e se foi no celular ou no computador, com um código aleatório que some quando a aba é fechada. Não guardamos seu IP.</p>
 <h2>Quanto tempo guardamos</h2>
-<p>Enquanto sua conta existir. Ao apagar a conta, os dados são removidos do servidor na hora; cópias de segurança são sobrescritas em até 30 dias.</p>
+<p>Enquanto sua conta existir. Ao apagar a conta, os dados são removidos do servidor na hora; cópias de segurança são sobrescritas em até 30 dias. Os registros de uso do app e de visitas ao site são apagados depois de 13 meses.</p>
 <h2>Fale com a gente</h2>
 <p>Dúvidas, pedidos sobre seus dados ou denúncias: <a href="mailto:barbosa199@gmail.com">barbosa199@gmail.com</a>.</p>
 </main>
@@ -178,5 +211,16 @@ footer p{margin:0;max-width:52ch;font-size:13px}
 <p>© 2026 RB Tecnologia. App de fãs, sem relação com emissoras, produtoras ou com os programas comentados.</p>
 </div></footer>
 
+<script>(function(){try{
+if(location.hostname!=='espiadao.com.br'||navigator.doNotTrack==='1'||navigator.globalPrivacyControl)return;
+var U="https://dlxwhlfsyhdbdiwzplwl.supabase.co",K="sb_publishable_HgMdNjFxocX7KACiNczuOw_5r9LrjiI",id;
+try{id=sessionStorage.getItem('espiadao_aba');if(!id){id='s'+Math.random().toString(36).slice(2,12)+Date.now().toString(36);sessionStorage.setItem('espiadao_aba',id)}}catch(e){id='s'+Math.random().toString(36).slice(2,14)}
+function manda(nome,props){fetch(U+'/rest/v1/rpc/registrar_metricas',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json',apikey:K,Authorization:'Bearer '+K},
+body:JSON.stringify({p_origem:'site',p_instalacao:id,p_plataforma:'web',p_versao:'site',p_eventos:[{nome:nome,props:props}]})}).catch(function(){})}
+var q=new URLSearchParams(location.search),ref='';try{var r=new URL(document.referrer);if(r.hostname!==location.hostname)ref=r.hostname.replace(/^www\./,'')}catch(e){}
+manda('site_visita',{pagina:location.pathname,ref:ref,utm_source:q.get('utm_source')||'',utm_medium:q.get('utm_medium')||'',utm_campaign:q.get('utm_campaign')||'',tela:matchMedia('(max-width:700px)').matches?'celular':'computador'});
+document.addEventListener('click',function(e){var l=e.target.closest&&e.target.closest('[data-loja]');if(l)manda('site_loja',{loja:l.getAttribute('data-loja')});
+var b=e.target.closest&&e.target.closest('[data-emote],[data-sortear]');if(b&&!window.__espBoneco){window.__espBoneco=1;manda('site_bonequinho',{})}});
+}catch(e){}})();</script>
 </body>
 </html>
