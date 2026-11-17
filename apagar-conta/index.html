@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apagar minha conta — Espiadão</title>
+<meta name="description" content="Como apagar sua conta do Espiadão e os seus dados.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://espiadao.com.br/apagar-conta/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Espiadão">
+<meta property="og:title" content="Apagar minha conta — Espiadão">
+<meta property="og:description" content="Como apagar sua conta do Espiadão e os seus dados.">
+<meta property="og:url" content="https://espiadao.com.br/apagar-conta/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://espiadao.com.br/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Três bonequinhos do Espiadão espiando por cima de um muro amarelo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Apagar minha conta — Espiadão">
+<meta name="twitter:description" content="Como apagar sua conta do Espiadão e os seus dados.">
+<meta name="twitter:image" content="https://espiadao.com.br/og.jpg">
+<meta name="theme-color" content="#14112A">
+<meta name="application-name" content="Espiadão">
+<meta name="apple-mobile-web-app-title" content="Espiadão">
+<meta name="google-site-verification" content="dC1mrd-TDhGLhsHZqboOtJz2x0d_6Bj6YTWvOQOJ2n4">
+<link rel="icon" href="/icone.png" type="image/png">
+<link rel="apple-touch-icon" href="/icone.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--fundo:#14112A;--fundo2:#0E0B20;--palco:#2A2452;--cartao:#1E1A3A;--linha:#3A3366;--texto:#F1EFFF;--suave:#A9A3D1;
+--holofote:#F4C430;--holofote-texto:#2A1F00;--roxo:#7F5AF0;--rosa:#E06C9F;--azul:#4D8DE0;--verde:#1D9E75;--laranja:#E9A23B}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--texto);font:17px/1.6 "Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--holofote)}
+h1,h2,h3,.marca{font-family:"Baloo 2",system-ui,sans-serif;letter-spacing:-.01em}
+.miolo{max-width:1080px;margin:0 auto;padding:0 20px}
+.estreito{max-width:720px}
+/* barra */
+.barra{position:sticky;top:0;z-index:5;background:rgba(20,17,42,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(58,51,102,.6)}
+.barra .miolo{display:flex;align-items:center;justify-content:space-between;height:60px}
+.marca{display:flex;align-items:center;gap:10px;font-size:26px;font-weight:800;color:var(--texto);text-decoration:none;line-height:1}
+.marca img{border-radius:10px}
+.marca b{color:var(--holofote)}
+.barra nav{display:flex;gap:18px;font-size:15px;font-weight:700}
+.barra nav a{color:var(--suave);text-decoration:none}
+.barra nav a:hover{color:var(--texto)}
+/* palco */
+.hero{position:relative;padding:48px 0 0;text-align:center;overflow:hidden;
+background:radial-gradient(ellipse 60% 55% at 50% 62%,rgba(244,196,48,.22),transparent 70%),radial-gradient(ellipse 90% 70% at 50% 0%,#2A2452 0%,transparent 70%),var(--fundo)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+background:conic-gradient(from 180deg at 50% -10%,transparent 168deg,rgba(255,236,170,.10) 174deg,rgba(255,236,170,.16) 180deg,rgba(255,236,170,.10) 186deg,transparent 192deg)}
+.etiqueta{display:inline-flex;align-items:center;gap:8px;background:rgba(127,90,240,.18);border:1px solid rgba(127,90,240,.5);color:#CFC2FF;border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px}
+.etiqueta i{width:8px;height:8px;border-radius:50%;background:#FF5A5F;box-shadow:0 0 0 0 rgba(255,90,95,.7);animation:pulso 1.6s infinite}
+@keyframes pulso{70%{box-shadow:0 0 0 10px rgba(255,90,95,0)}100%{box-shadow:0 0 0 0 rgba(255,90,95,0)}}
+.hero h1{font-size:clamp(40px,7vw,76px);line-height:.98;margin:18px auto 12px;font-weight:800;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--holofote);text-shadow:0 0 32px rgba(244,196,48,.35)}
+.hero .sub{color:var(--suave);font-size:clamp(17px,2.2vw,20px);max-width:36ch;margin:0 auto}
+.palco{position:relative;height:clamp(360px,46vw,500px);margin-top:0}
+#palco{width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y}
+#palco:active{cursor:grabbing}
+.dica{position:absolute;left:50%;bottom:0px;transform:translateX(-50%);font-size:13px;color:var(--suave);opacity:.8;pointer-events:none;white-space:nowrap}
+html:not(.com-3d) .palco,html:not(.com-3d) .controles{display:none}
+.controles{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:6px 20px 0}
+.chip{font:inherit;font-weight:800;font-size:15px;color:var(--texto);background:var(--cartao);border:1.5px solid var(--linha);border-radius:999px;padding:9px 16px;cursor:pointer;transition:transform .12s,border-color .12s,background .12s}
+.chip:hover{border-color:var(--roxo);transform:translateY(-2px)}
+.chip:active{transform:scale(.96)}
+.chip.dado{background:var(--holofote);color:var(--holofote-texto);border-color:var(--holofote);box-shadow:0 4px 0 #C99A12}
+.lojas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding:28px 20px 56px}
+.loja{display:flex;align-items:center;gap:10px;background:#000;border:1px solid #444;border-radius:14px;padding:10px 18px;text-align:left;color:#fff;min-width:190px;opacity:.9}
+.loja svg{width:26px;height:26px;fill:#fff;flex:none}
+.loja small{display:block;font-size:11px;color:#bbb;line-height:1.1}
+.loja b{font-size:17px;line-height:1.2}
+/* seções */
+section{padding:72px 0}
+.titulo{text-align:center;margin-bottom:36px}
+.titulo h2{font-size:clamp(30px,4.4vw,44px);line-height:1.05;margin:0 0 10px;font-weight:800}
+.titulo p{color:var(--suave);margin:0 auto;max-width:46ch}
+.sobretitulo{font-family:"Baloo 2",sans-serif;color:var(--holofote);text-transform:uppercase;letter-spacing:.08em;font-weight:800;font-size:14px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){.grade{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grade{grid-template-columns:1fr}}
+.cartao{position:relative;background:var(--cartao);border:1px solid var(--linha);border-radius:24px;padding:12px 12px 22px;overflow:hidden;transition:transform .18s,border-color .18s}
+.cartao:hover{transform:translateY(-4px);border-color:var(--c,var(--roxo))}
+.cartao h3{font-size:22px;margin:18px 10px 4px;font-weight:800}
+.cartao p{margin:0 10px;color:var(--suave);font-size:16px}
+/* mini telas */
+.tela{height:178px;border-radius:16px;background:radial-gradient(ellipse 80% 90% at 50% 110%,color-mix(in srgb,var(--c) 35%,transparent),transparent 70%),var(--palco);
+border:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;padding:14px;overflow:hidden;font-family:"Nunito",sans-serif}
+.cara{width:64px;height:64px;border-radius:50%;background:color-mix(in srgb,var(--c) 30%,#2A2452);object-fit:cover;flex:none}
+.cara.p{width:34px;height:34px}
+.cara.g{width:92px;height:92px}
+.fila{display:flex;align-items:flex-end;justify-content:center;gap:6px}
+.amostras{display:flex;gap:6px}
+.amostras i{width:20px;height:20px;border-radius:50%;border:2px solid rgba(255,255,255,.8)}
+.pergunta{width:100%;max-width:250px}
+.pergunta b{display:block;font-size:12px;color:var(--holofote);letter-spacing:.06em;margin-bottom:6px}
+.op{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border-radius:10px;padding:5px 10px;margin-top:5px;font-size:13px;font-weight:700;color:var(--suave)}
+.op span{width:18px;height:18px;border-radius:6px;display:grid;place-items:center;font-size:11px;background:rgba(255,255,255,.1);color:var(--texto)}
+.op.certa{background:#1D9E75;color:#fff}
+.op.certa span{background:rgba(255,255,255,.25)}
+.op .linha{flex:1;height:7px;border-radius:4px;background:rgba(255,255,255,.18)}
+.op.certa .linha{background:rgba(255,255,255,.5)}
+.chama{align-self:flex-end;margin-top:-4px;background:rgba(244,196,48,.15);color:var(--holofote);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:800}
+.quadros{display:grid;grid-template-columns:repeat(5,26px);gap:5px}
+.quadros i{height:26px;border-radius:7px;background:#3A3366}
+.quadros .v{background:#1D9E75}.quadros .a{background:#C99A12}
+.placar{font:800 13px "Baloo 2",sans-serif;color:var(--texto);opacity:.9}
+.votos{width:100%;max-width:250px;display:grid;gap:9px}
+.voto{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:8px;font-size:13px;font-weight:800}
+.barra-voto{height:10px;border-radius:5px;background:rgba(255,255,255,.1);overflow:hidden;grid-column:2}
+.barra-voto i{display:block;height:100%;border-radius:5px;background:var(--c)}
+.voto small{grid-column:2;font-size:12px;color:var(--suave);margin-top:-6px}
+.ranking{width:100%;max-width:250px;display:grid;gap:6px}
+.pos{display:grid;grid-template-columns:20px 34px 1fr auto;align-items:center;gap:8px;background:rgba(255,255,255,.05);border-radius:12px;padding:4px 10px 4px 6px;font-size:13px;font-weight:800}
+.pos.eu{background:color-mix(in srgb,var(--c) 30%,transparent);outline:1.5px solid var(--c)}
+.pos em{font-style:normal;color:var(--holofote);text-align:center}
+.pos span{color:var(--suave)}
+.post{width:100%;max-width:260px;background:rgba(0,0,0,.25);border-radius:14px;padding:10px;display:grid;grid-template-columns:34px 1fr;gap:4px 8px;font-size:13px;text-align:left}
+.post b{font-weight:800}.post small{color:var(--suave);font-weight:600}
+.post p{grid-column:2;margin:0;color:var(--texto);font-size:13px}
+.reacoes{grid-column:2;display:flex;gap:5px;margin-top:4px}
+.reacoes span{background:rgba(255,255,255,.08);border-radius:999px;padding:1px 7px;font-size:11px;font-weight:800;color:var(--suave);white-space:nowrap}
+.espiando{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;color:var(--texto);background:rgba(255,90,95,.18);border-radius:999px;padding:3px 10px}
+.espiando i{width:7px;height:7px;border-radius:50%;background:#FF5A5F}
+.passos{counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.passo{background:var(--fundo2);border:1px dashed var(--linha);border-radius:24px;padding:22px}
+.passo::before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--holofote);color:var(--holofote-texto);font:800 22px "Baloo 2",sans-serif;box-shadow:0 4px 0 #C99A12}
+.passo h3{font-size:21px;margin:14px 0 4px}
+.passo p{margin:0;color:var(--suave)}
+.faixa{background:linear-gradient(135deg,#2A2452,#3B2A7A 60%,#5B3FC4);border-radius:32px;padding:40px 28px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+.faixa .grande{font-size:64px;line-height:1}
+.faixa h2{margin:0 0 6px;font-size:clamp(26px,3.4vw,34px);line-height:1.1}
+.faixa p{margin:0;color:#DCD5FF}
+.final{text-align:center;padding:80px 0 90px;background:radial-gradient(ellipse 50% 60% at 50% 100%,rgba(244,196,48,.18),transparent 70%)}
+.final h2{font-size:clamp(32px,5vw,52px);line-height:1.02;margin:0 auto 12px;max-width:16ch}
+.final p{color:var(--suave);margin:0 auto 24px;max-width:40ch}
+.selo{display:inline-block;background:var(--holofote);color:var(--holofote-texto);font-weight:800;border-radius:999px;padding:12px 24px;font-size:17px;box-shadow:0 5px 0 #C99A12}
+.nota{color:var(--suave);font-size:14px}
+.emojis{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.emojis span{background:rgba(255,255,255,.08);border-radius:999px;padding:3px 10px;font-size:15px}
+.emojis b{font-size:12px;color:var(--suave)}
+a.loja{text-decoration:none;opacity:1}
+a.loja:hover{border-color:#888}
+.linha-tempo{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:f}
+@media (max-width:900px){.linha-tempo{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.linha-tempo{grid-template-columns:1fr}}
+.linha-tempo li{background:var(--cartao);border:1px solid var(--linha);border-radius:24px;padding:20px;border-top:4px solid var(--holofote)}
+.linha-tempo b{font:800 20px/1.2 "Baloo 2",sans-serif;color:var(--holofote)}
+.linha-tempo p{margin:6px 0 0;color:var(--suave);font-size:16px}
+.duvida{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:0 18px;margin-bottom:10px}
+.duvida summary{cursor:pointer;font:800 19px/1.3 "Baloo 2",sans-serif;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.duvida summary::-webkit-details-marker{display:none}
+.duvida summary::after{content:"+";color:var(--holofote);font-size:24px;line-height:1}
+.duvida[open] summary::after{content:"−"}
+.duvida p{margin:0 0 16px;color:var(--suave)}
+/* textos legais */
+.doc{padding:48px 0 24px}
+.doc h1{font-size:clamp(34px,5vw,46px);line-height:1.05;margin:0 0 6px}
+.doc h2{font-size:22px;margin:30px 0 4px}
+.doc p{margin:6px 0}
+footer{border-top:1px solid var(--linha);background:var(--fundo2)}
+footer .miolo{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:24px;padding-bottom:28px;font-size:15px;color:var(--suave)}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+footer p{margin:0;max-width:52ch;font-size:13px}
+@media (max-width:640px){
+  .barra nav a:not(:last-child){display:none}
+  section{padding:56px 0}
+  .faixa{grid-template-columns:1fr;text-align:center;padding:32px 22px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="barra"><div class="miolo">
+<a class="marca" href="/"><img src="/icone.png" alt="" width="36" height="36"><span>Espiad<b>ã</b>o</span></a>
+<nav><a href="/#jogos">O app</a><a href="/#calendario">Calendário</a><a href="/#perguntas">Dúvidas</a><a href="/privacidade/">Privacidade</a></nav>
+</div></header>
+<main class="miolo estreito doc">
+<span class="sobretitulo">Espiadão</span>
+<h1>Apagar minha conta</h1>
+<p class="nota">Versão de 14/11/2026.</p>
+<h2>Pelo app (na hora)</h2>
+<p>Abra o Espiadão, vá em Perfil → Apagar minha conta e confirme. A conta e tudo o que está no servidor são apagados na hora: e-mail, @, data de nascimento, bonequinho, respostas, palpites, ligas, torcida, posts, curtidas, denúncias, bloqueios e o código de notificação.</p>
+<h2>Sem o app</h2>
+<p>Mande um e-mail para <a href="mailto:barbosa199@gmail.com">barbosa199@gmail.com</a> com o assunto "Apagar minha conta", a partir do e-mail que você usa para entrar (ou dizendo o seu @). Apagamos em até 7 dias e respondemos confirmando.</p>
+<h2>O que fica</h2>
+<p>Nada ligado à sua conta: os registros de uso do app feitos com a conta também são apagados na hora. Cópias de segurança são sobrescritas em até 30 dias e os registros anônimos (de antes de entrar, só com um código aleatório do aparelho) somem depois de 13 meses. O que está só no aparelho some ao desinstalar o app.</p>
+</main>
+<footer><div class="miolo">
+<nav><a href="/">Início</a><a href="/privacidade/">Privacidade</a><a href="/termos/">Termos de uso</a><a href="/apagar-conta/">Apagar conta</a><a href="mailto:barbosa199@gmail.com">Contato</a></nav>
+<p>© 2026 RB Tecnologia. App de fãs, sem relação com emissoras, produtoras ou com os programas comentados.</p>
+</div></footer>
+
+<script>(function(){try{
+if(location.hostname!=='espiadao.com.br'||navigator.doNotTrack==='1'||navigator.globalPrivacyControl)return;
+var U="https://dlxwhlfsyhdbdiwzplwl.supabase.co",K="sb_publishable_HgMdNjFxocX7KACiNczuOw_5r9LrjiI",id;
+try{id=sessionStorage.getItem('espiadao_aba');if(!id){id='s'+Math.random().toString(36).slice(2,12)+Date.now().toString(36);sessionStorage.setItem('espiadao_aba',id)}}catch(e){id='s'+Math.random().toString(36).slice(2,14)}
+function manda(nome,props){fetch(U+'/rest/v1/rpc/registrar_metricas',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json',apikey:K,Authorization:'Bearer '+K},
+body:JSON.stringify({p_origem:'site',p_instalacao:id,p_plataforma:'web',p_versao:'site',p_eventos:[{nome:nome,props:props}]})}).catch(function(){})}
+var q=new URLSearchParams(location.search),ref='';try{var r=new URL(document.referrer);if(r.hostname!==location.hostname)ref=r.hostname.replace(/^www\./,'')}catch(e){}
+manda('site_visita',{pagina:location.pathname,ref:ref,utm_source:q.get('utm_source')||'',utm_medium:q.get('utm_medium')||'',utm_campaign:q.get('utm_campaign')||'',tela:matchMedia('(max-width:700px)').matches?'celular':'computador'});
+document.addEventListener('click',function(e){var l=e.target.closest&&e.target.closest('[data-loja]');if(l)manda('site_loja',{loja:l.getAttribute('data-loja')});
+var b=e.target.closest&&e.target.closest('[data-emote],[data-sortear]');if(b&&!window.__espBoneco){window.__espBoneco=1;manda('site_bonequinho',{})}});
+}catch(e){}})();</script>
+</body>
+</html>
